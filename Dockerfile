@@ -1,5 +1,5 @@
 ARG BASE_IMAGE=golang
-ARG BASE_TAG=1.12.0-alpine3.9
+ARG BASE_TAG=1.18.1-alpine3.15
 FROM ${BASE_IMAGE}:${BASE_TAG} as base
 # due diligence
 RUN apk update --no-cache && apk upgrade --no-cache
